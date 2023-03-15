@@ -1,0 +1,73 @@
+import Image from "next/image";
+import html from "../assets/bxl-html5 1.svg";
+import css from "../assets/bxl-css3-1.svg";
+import js from "../assets/bxl-javascript 1.svg";
+import bootstrap from "../assets/bxl-bootstrap 1.svg";
+import tailwind from "../assets/bxl-tailwind-css 1.svg";
+import react from "../assets/bxl-react 1.svg";
+import redux from "../assets/bxl-redux 1.svg";
+import sass from "../assets/bxl-sass 1.svg";
+import nextjs from "../assets/next-logo.png";
+import Button from "../components/Button";
+
+
+const skills = [
+  {
+    label: "HTML",
+    svg: html
+  },
+  {
+    label: "CSS",
+    svg: css
+  },
+  {
+    label: "JS",
+    svg: js
+  },
+  {
+    label: "Bootstrap",
+    svg: bootstrap
+  },
+  {
+    label: "Sass",
+    svg: sass
+  },
+  {
+    label: "Tailwind",
+    svg: tailwind
+  },
+  {
+    label: "React",
+    svg: react
+  },
+  {
+    label: "Redux",
+    svg: redux
+  },
+  {
+    label: "Nextjs",
+    svg: nextjs
+  },
+]
+
+export default function About() {
+  return (
+    <main className="min-h-screen flex flex-col items-center justify-center gap-2 overflow-hidden md:p-8">
+      <div className="md:flex md:items-center md:justify-center md:mb-10 mt-5">
+      <div className="h-[250px] w-[250px] rounded-full absolute top-0 left-0 bg-gradient-to-b from-[#00FFF0] to-white opacity-30 blur-3xl"></div>
+      <div className="h-[250px] w-[250px] rounded-full absolute bottom-0 rigth-0 bg-gradient-to-b from-[#00FFF0] to-white opacity-30 blur-3xl"></div>
+      <p className="z-10 italic text-center text-base md:text-lg px-8 md:text-start after:block after:w-[75%] after:mx-auto after:my-4 after:bg-[#d4d4d4] after:h-[0.5px]">
+      Frontend Developer, currently working as <span className="text-[#0075FF]">Integration Specialist</span> at <span className="not-italic font-bold text-orange-500">FUDO</span> (gastronomic software).<br /><br />
+      I studied computer science and now I'm doing many courses to learn <span className="text-[#0075FF]">new technologies</span>.<br /><br />
+      I love what I do and I <span className="text-[#0075FF]">always want to be better</span> and grow both as a person and as a worker.<br /><br />
+      </p>
+      <div className="bg-white rounded-lg grid grid-rows-3 gap-4 grid-flow-col p-8 m-8 border-[#d4d4d4] border-[0.7px] shadow-sm z-10">
+        {skills.map(({svg, label}) => {
+          return <Image src={svg} className="w-[80px] h-[80px] md:w-[100px] md:h-[100px]" key={label} alt={label} />
+        })}
+      </div>
+      </div>
+      <Button text={"Go to view CV"} route={"/cv"} options={"  z-10 text-lg bg-black text-white"} />
+    </main>
+  );
+}
