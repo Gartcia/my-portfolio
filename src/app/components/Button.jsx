@@ -5,7 +5,7 @@ export default function Button({ text, route, options }) {
     <Link
       href={route}
       className={
-        "w-fit  gap-2 rounded-md border-[#d4d4d4] border-[1px] bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm hover:bg-[#fdfdfd] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-100" +
+        "w-fit  gap-2 rounded-md border-[#d4d4d4] border-[1px] bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm hover:opacity-95 hover:shadow-lg transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-100" +
         options
       }
     >

@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header className="absolute top-0 min-w-full z-20">
+        <header className="absolute top-0 min-w-full">
           <Navigation />
         </header>
         {children}
