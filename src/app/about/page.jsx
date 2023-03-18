@@ -61,14 +61,14 @@ export default function About() {
           <span className="not-italic font-bold text-orange-500">FUDO</span>{" "}
           (gastronomic software).
           <br />
-          <br />I studied computer science and now I'm doing many courses to
+          <br />I studied computer science and now I&apos;m doing many courses to
           learn <span className="text-[#0075FF]">new technologies</span>.<br />
           <br />I love what I do and I{" "}
           <span className="text-[#0075FF]">always want to be better</span> and
           grow both as a person and as a worker.
           <br />
           <br />
-          I like playing video games, especially Valorant (a shooter game). I'm a Counter-Strike old player.
+          I like playing video games, especially Valorant (a shooter game). I&apos;m a Counter-Strike old player.
           <br />
           <br />
         </p>
