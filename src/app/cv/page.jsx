@@ -24,8 +24,7 @@ export default function Cv() {
         />
       </div>
       <Link
-        href="../assets/Gaston_Ezequiel_Artigas_Ciabattini_CV_GENERAL_EN.pdf"
-        download
+        href="https://drive.google.com/file/d/14ohykRb7KiO1nak9IBRGdf0lBiQxlezO/view?usp=share_link"
         target="_blank" 
         className="z-10 rounded-lg flex justify-center items-center px-2.5 py-1.5 bg-black hover:opacity-95 transition-all text-white"
       >
