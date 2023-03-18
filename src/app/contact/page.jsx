@@ -1,6 +1,7 @@
 "use client"
 import Button from "../components/Button";
 import MapChart from "../components/MapChart";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
@@ -8,14 +9,22 @@ export default function Contact() {
       <div className="h-[250px] w-[250px] rounded-full absolute top-0 left-0 bg-gradient-to-b from-[#00FFF0] to-white opacity-30 blur-3xl"></div>
       <div className="h-[250px] w-[250px] rounded-full absolute bottom-0 rigth-0 bg-gradient-to-b from-[#00FFF0] to-white opacity-30 blur-3xl"></div>
       <div className="w-[100%] md:pl-10">
-        <h1 className="text-xl md:text-2xl lg:text-4xl text-center md:text-left mb-4">
+        <motion.h1 
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="text-xl md:text-2xl lg:text-4xl text-center md:text-left mb-4">
           Do you want to work <span className="text-[#0075FF]">with me?</span>
           <br />
           Contact me here!
-        </h1>
+        </motion.h1>
       </div>
       <div className="flex gap-2 md:justify-start justify-center items-center w-[100%] relative">
-      <div className="z-40 flex flex-col justify-start items-center p-3 lg:ml-10 rounded-lg border-[#d4d4d4] border-[0.7px] shadow-md md:min-w-[55%] lg:min-w-[50%] h-[500px] md:h-[600px] backdrop-blur-xl">
+      <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.7, delay:0.4}}
+       className="z-10 flex flex-col justify-start items-center p-3 lg:ml-10 rounded-lg border-[#d4d4d4] border-[0.7px] shadow-md md:min-w-[55%] lg:min-w-[50%] h-[500px] md:h-[600px] backdrop-blur-xl">
         <div className="flex gap-2 justify-between items-start w-full p-4">
           <input
             className="rounded-md border-[#d4d4d4] border-[0.7px] px-2 py-2  placeholder:pl-2 w-full focus-within:outline-[#0075FF]"
@@ -55,16 +64,20 @@ export default function Contact() {
             Send
           </div>
         </div>
-      </div>
+      </motion.div>
       <MapChart />
       </div>
-      <div className="w-[100%] flex justify-center items-center">
+      <motion.div 
+      initial={{ y:100, opacity: 0 }}
+      animate={{ y:0,opacity: 1 }}
+      transition={{ duration: 0.7, delay:0.4}}
+      className="w-[100%] flex justify-center items-center">
         <Button
           text={"Go back to home"}
           route={"/"}
           options={"  lg:text-2xl md:text-xl z-10 text-lg mt-4"}
         />
-      </div>
+      </motion.div>
     </main>
   );
 }
