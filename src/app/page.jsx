@@ -12,7 +12,7 @@ export default function Home() {
             Hello there! 👋
           </span>
           <br />
-          <p className="text-2xl md:text-4xl leading-3">I'm Gaston,</p>
+          <p className="text-2xl md:text-4xl leading-3">I&apos;m Gaston,</p>
           <br />
           <p className="text-xl md:text-3xl">
             Better known as{" "}
@@ -33,7 +33,7 @@ export default function Home() {
           <Button options={" text-xl"} text={"Go to about"} route={"/about"} />
         </div>
       </div>
-      <Image src={me} className="z-10 translate-y-16 w-[270px] md:w-auto filter drop-shadow-lg" />
+      <Image src={me} className="z-10 translate-y-16 w-[270px] md:w-auto filter drop-shadow-lg" alt="this is an image of me" />
     </main>
   );
 }
