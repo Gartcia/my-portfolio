@@ -60,7 +60,7 @@ export default function About() {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="z-10 italic text-center text-sm md:text-lg lg:text-2xl px-8 md:text-start after:block after:w-[75%] after:mx-auto after:my-4 after:bg-[#d4d4d4] after:h-[0.5px]"
+          className="z-10 italic text-center text-sm md:text-lg xl:text-2xl px-8 md:text-start after:block after:w-[75%] after:mx-auto after:my-4 after:bg-[#d4d4d4] after:h-[0.5px]"
         >
           Frontend Developer, currently working as{" "}
           <span className="text-[#0075FF]">Integration Specialist</span> at{" "}
@@ -113,6 +113,7 @@ export default function About() {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}
+        className="z-10"
       >
         <Button
           text={"Go to view CV"}

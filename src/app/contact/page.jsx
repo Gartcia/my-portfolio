@@ -37,7 +37,7 @@ export default function Contact() {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="text-xl md:text-2xl lg:text-4xl text-center md:text-left mb-4"
+          className="text-xl md:text-2xl xl:text-4xl text-center md:text-left mb-4"
         >
           Do you want to work <span className="text-[#0075FF]">with me?</span>
           <br />
@@ -50,7 +50,7 @@ export default function Contact() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="flex flex-col justify-start items-center p-3 lg:ml-10 rounded-lg border-[#d4d4d4] border-[0.7px] shadow-md md:min-w-[55%] lg:min-w-[50%] h-[500px] md:h-[600px] backdrop-blur-xl"
+            className="flex flex-col justify-start items-center p-3 lg:ml-10 rounded-lg border-[#d4d4d4] border-[0.7px] shadow-md md:min-w-[55%] xl:min-w-[50%] h-[400px] xl:h-[600px] backdrop-blur-xl"
           >
             <div className="flex gap-2 justify-between items-start w-full p-4">
               <input

@@ -15,7 +15,7 @@ export default function Cv() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
-        className="flex flex-col gap-2 items-center p-4 m-6 overflow-x-hidden h-[500px] md:h-[700px] backdrop-blur-xl"
+        className="flex flex-col gap-2 items-center p-4 mt-14 overflow-x-hidden h-[400px] xl:h-[700px] backdrop-blur-xl"
       >
         <Image
           priority={true}

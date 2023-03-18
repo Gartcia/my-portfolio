@@ -65,7 +65,7 @@ export default function Projects() {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="text-xl md:text-2xl lg:text-4xl text-center md:text-left mb-3"
+          className="text-xl md:text-2xl xl:text-4xl text-center md:text-left mb-3"
         >
           My recent <span className="text-[#0075FF]">projects</span>
         </motion.h1>
@@ -75,7 +75,7 @@ export default function Projects() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay:0.4 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 grid-flow-row m-8 lg:max-w-6xl max-h-[500px] lg:max-h-[600px] overflow-x-hidden"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 grid-flow-row m-8 lg:max-w-6xl max-h-[400px] xl:max-h-[600px] overflow-x-hidden"
         >
           {projects.map(({ label, img, url, stack, git }) => {
             return (
