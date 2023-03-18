@@ -79,7 +79,7 @@ export default function About() {
                 src={svg}
                 className="w-[80px] h-[80px] md:max-w-[100px] md:max-h-[100px]"
                 key={label}
-                alt={label}
+                alt={label + " icon"}
               />
             );
           })}

@@ -68,13 +68,13 @@ export default function Projects() {
           {projects.map(({ label, img, url, stack, git }) => {
             return (
               <div key={label} className="relative rounded-lg overflow-hidden border-[#d4d4d4] border-[0.7px]">
-                <Image src={img} />
+                <Image src={img} alt={label + " image preview"} />
                 <div className="absolute w-[100%] h-[100%] top-0 left-0 bg-black opacity-0 hover:opacity-100 flex flex-col justify-evenly items-center gap-4 transition-opacity">
                   <h3 className="text-white text-xs lg:text-base">{label}</h3>
                   <div className="flex flex-wrap justify-center gap-2 items-center text-xs lg:text-base p-2">
                     {stack.map((tec) => {
                       return (
-                        <div className="px-2 py-1 text-white bg-slate-900">
+                        <div className="px-2 py-1 text-white bg-slate-900" key={tec}>
                           {tec}
                         </div>
                       );
@@ -107,7 +107,7 @@ export default function Projects() {
               href={"https://github.com/Gartcia"}
               target={"_blank"}
             >
-              See more in GitHub <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbdJREFUSEu1VQtRw0AU3FUAKAAUAAqgCgAFFAVQBYACigOqAFBAUUBx0DooCh6z7bvwcrk2gZncTCYzl7vdt/s+IXpe7BkfrQRmdgHgHMCxP4pp5s+U5GRbkBsJHPgRwEGLyjmAEcnX0rkigZndA7j7o31jkqP8ToPgn+AJ94nkbSSpEZjZGYB3P/AGQEqGAG5878vfR/6W/89+5sr3LqNdOYH83PeDDyRFADPbJbmMkcW9TPWc5GE6WxF4Ul8CyISkom9dBVuvSUrZb5mamTaSTH0bkJy2oq8VqoQ/S8FFBQI7TV6T1KXOy8zi/RnJk1yBPN5xxA+SSnjnlRGA5Cr4qMACWi8EUeKS5F7n8Nd5iA4sSK4mQFSQJ1ntP+5CYmZqLo2VtKoK3FSm354P9YG6s9YDCUW94JWXB9IsU10yMzWaEj0AoKhS2aqrh4nIgaVYVSeSuCp7ahY5QRoVilhllkCqrg7R55amT7X+KQ275GdxOgaC0sTdPuzC5USiH4vUKGmr1t9C0FDZsCgDkF0C1fArWZQULDw/xbHS5ZcpIvWF1EQFGiUHm/5k6WArQZc+2Hamd4IfXwTFGbCHxBkAAAAASUVORK5CYII="/>
+              See more in GitHub <Image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbdJREFUSEu1VQtRw0AU3FUAKAAUAAqgCgAFFAVQBYACigOqAFBAUUBx0DooCh6z7bvwcrk2gZncTCYzl7vdt/s+IXpe7BkfrQRmdgHgHMCxP4pp5s+U5GRbkBsJHPgRwEGLyjmAEcnX0rkigZndA7j7o31jkqP8ToPgn+AJ94nkbSSpEZjZGYB3P/AGQEqGAG5878vfR/6W/89+5sr3LqNdOYH83PeDDyRFADPbJbmMkcW9TPWc5GE6WxF4Ul8CyISkom9dBVuvSUrZb5mamTaSTH0bkJy2oq8VqoQ/S8FFBQI7TV6T1KXOy8zi/RnJk1yBPN5xxA+SSnjnlRGA5Cr4qMACWi8EUeKS5F7n8Nd5iA4sSK4mQFSQJ1ntP+5CYmZqLo2VtKoK3FSm354P9YG6s9YDCUW94JWXB9IsU10yMzWaEj0AoKhS2aqrh4nIgaVYVSeSuCp7ahY5QRoVilhllkCqrg7R55amT7X+KQ275GdxOgaC0sTdPuzC5USiH4vUKGmr1t9C0FDZsCgDkF0C1fArWZQULDw/xbHS5ZcpIvWF1EQFGiUHm/5k6WArQZc+2Hamd4IfXwTFGbCHxBkAAAAASUVORK5CYII=" alt="github icon" />
             </Link>
           </div>
       </div>
