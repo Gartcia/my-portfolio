@@ -149,7 +149,7 @@ export default function Projects() {
         <Button
           text={"Go to contact"}
           route={"/contact"}
-          options={"  lg:text-2xl md:text-xl z-10 text-lg"}
+          options={"  xl:text-2xl z-10 text-lg"}
         />
       </motion.div>
     </main>

@@ -118,7 +118,7 @@ export default function About() {
         <Button
           text={"Go to view CV"}
           route={"/cv"}
-          options={"  z-10 text-lg lg:text-xl"}
+          options={"  z-10 text-lg xl:text-xl"}
         />
       </motion.div>
     </main>
