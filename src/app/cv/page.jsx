@@ -24,7 +24,7 @@ export default function Cv() {
           className="border-[1px] border-[#d4d4d4] shadow-lg "
         />
       </div>
-      <Link href={""} className="z-10 rounded-lg flex justify-center items-center px-2.5 py-1.5 bg-black hover:opacity-95 transition-all text-white">Download <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+      <Link href={"../assets/Gaston_Ezequiel_Artigas_Ciabattini_CV_GENERAL_EN.pdf"} download={"Gaston_Ezequiel_Artigas_Ciabattini_CV_EN"} className="z-10 rounded-lg flex justify-center items-center px-2.5 py-1.5 bg-black hover:opacity-95 transition-all text-white">Download <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
 </svg>
 </Link>
