@@ -110,7 +110,7 @@ export default function Contact() {
         <Button
           text={"Go back to home"}
           route={"/"}
-          options={"  xl:text-2xl md:text-xl z-10 text-lg mt-4"}
+          options={"  xl:text-2xl z-10 text-base mt-4"}
         />
       </motion.div>
       <ToastContainer
