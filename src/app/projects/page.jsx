@@ -21,7 +21,7 @@ const projects = [
   {
     label: "Pomodoro app",
     img: pomodoro,
-    url: "https://artcia-markdown.netlify.app",
+    url: "https://artcia-pomodoro.netlify.app/",
     git: "https://github.com/Gartcia/weather-app",
     stack: ["React", "Bootstrap"],
   },
