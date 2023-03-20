@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 export default function Contact() {
   const form = useRef();
   const sendEmail = () => {
+    const toastId = toast.loading("Sending email...");
     emailjs
       .sendForm(
         "service_kxzzh9o",
@@ -19,11 +20,11 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          toast.success("The email was sent succesfully");
+          toast.update(toastId, { render: "The email was sent successfully", type: "succes", isLoading: false , autoClose: 2000 });
           console.log(result);
         },
         (error) => {
-          toast.error("An error has ocurred");
+          toast.update(toastId, { render: "An error has ocurred", type: "error", isLoading: false, autoClose: 2000 });
           console.error(error);
         }
       );
