@@ -20,7 +20,7 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          toast.update(toastId, { render: "The email was sent successfully", type: "succes", isLoading: false , autoClose: 2000 });
+          toast.update(toastId, { render: "The email was sent successfully", type: "success", isLoading: false , autoClose: 2000 });
           console.log(result);
         },
         (error) => {
